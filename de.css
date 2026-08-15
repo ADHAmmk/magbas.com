@@ -1,0 +1,460 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 5px 50px;
+}
+
+body {
+  font-family: "Cairo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+
+  font-variation-settings: "slnt" 0;
+}
+
+img {
+    height: 55px;
+    width: 55px;
+}
+
+#nav {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    
+    gap: 40px;
+}
+
+.feed{
+    background: black;
+    color: white;
+}
+
+.hh{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ffg {
+    margin: 0;
+}
+
+.kkl {
+  
+  height: 45px;
+  position: relative;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+  width: 140px;
+  background: #9B6A3A;
+  margin-top: 10px;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+}
+
+.dgd {
+     background-image:
+        linear-gradient(to left,  #F6F1EA, rgba(0, 0, 0, 0.5)),
+        url(ChatGPT\ Image\ 30\ يونيو\ 2026،\ 01_01_05\ م.png);
+    
+    height: 500px;
+    object-fit: cover;
+    
+    background-size: cover;
+}
+
+.nna {
+    align-items: center;
+}
+
+.ffvf.bod{
+    background-color: black;
+}
+
+.ddd{
+    padding-top: 100px;
+    margin-bottom: 0;
+    padding-right: 150px;
+    color: #4A3423;
+    font-size: 55px;
+}
+
+.dd{
+    padding-right: 175px;
+    color: #4A3423;
+    line-height: 50px;
+    font-size: 55px;
+    margin-top: 1;
+}
+
+.ss {
+    padding-right: 175px;
+    padding-top: 50px;
+    color: #4A3423;
+    line-height: 5px;
+}
+
+.s {
+    padding-right: 183px;
+    color: #4A3423;
+    line-height: 50px;
+}
+
+.lop{
+    width: 100px;
+    margin-right: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px #4A3423 ;
+    height: 45px;
+    background: #9B6A3A;
+}
+
+.ffvf{
+    justify-content: center;
+    padding-top: 40px;
+    background-color: #F2E8DA;
+    text-align: center;
+}
+
+.img-color{
+    width: 200px;
+    
+}
+
+.fs{
+    line-height: 10px;
+    font-size: 25px;
+    color: #4A3423;
+}
+
+.imgs{
+    
+    display: flex;
+    
+    justify-content: center;
+    gap: 50px;
+}
+
+.img1{
+    height: 270px;
+     margin-bottom: 50px;
+    border-radius: 10px;
+    width: 200px;
+    box-shadow: 0 25px 60px rgba(74, 52, 35, 0.25);
+    background: #FFFFFF;
+    transition: transform  0.6s ease-in-out;
+}
+
+.img1:hover{
+    transform: translateY(-10px);
+}
+
+.ds{
+    object-fit: cover;
+    border-radius:  10px 10px 0 0;
+    width: 200px;
+    height: 130px;
+}
+
+h5{
+    color: #4A3423;
+    padding-bottom: 8px;
+    font-size: 15px;
+}
+
+h6{
+    color: #6F5A49;
+    padding-bottom: 8px;
+    font-size: 12px;
+}
+
+button{
+    padding: 4px 22px;
+    align-items: center;
+    font-family: "Cairo", sans-serif;
+      font-optical-sizing: auto;
+  font-weight: 700;
+  border-radius: 4px;
+  font-style: normal;
+
+  font-variation-settings: "slnt" 0;
+    background: #9B6A3A;
+    color: #FFFFFF;
+    box-shadow: 0 4px 15px #4A3423;
+    border: 0;
+}
+
+.bole {
+    background-image: linear-gradient(to left,  #F6F1EA, rgba(0, 0, 0, 0.5)),
+    url(about-us-background\(1\).png);
+    position: relative;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: cover;
+    
+}
+
+.gop{
+ font-size: 23px;
+ color: #4A3423;
+ line-height: 5px;
+ padding: 0 250px;
+ 
+}
+
+.do{
+    padding: 0 190px;
+    width: 200px;
+      
+   
+}
+
+.fok{
+  
+  padding-top: 30px;
+}
+
+.llp{
+    
+    padding: 0 190px;
+    align-items: center;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.jj{
+    margin: 15px 190px;
+
+}
+
+@media (max-width: 1024px){
+ 
+    .navbar{
+        padding: 5px 25px;
+    }
+ 
+    #nav{
+        gap: 22px;
+    }
+ 
+    .ddd, .dd{
+        padding-right: 80px;
+        font-size: 42px;
+    }
+ 
+    .ss, .s{
+        padding-right: 90px;
+    }
+ 
+    .lop{
+        margin-right: 90px;
+    }
+ 
+    .gop{
+        padding: 0 120px;
+    }
+ 
+    .do{
+        padding: 0 100px;
+    }
+ 
+    .llp{
+        padding: 0 100px;
+    }
+ 
+    .jj{
+        margin: 15px 100px;
+    }
+}
+ 
+/* =========================================
+   Mobile / small tablet: up to 768px
+   ========================================= */
+@media (max-width: 768px){
+ 
+    .navbar{
+        padding: 10px 20px;
+        position: relative;
+    }
+ 
+    .burger{
+        display: flex;
+        order: 2;
+    }
+ 
+    .kkl{
+        order: 3;
+        margin-top: 0;
+        width: 120px;
+    }
+ 
+    #nav{
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        gap: 0;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        background: #F6F1EA;
+        box-shadow: 0 10px 20px rgba(74,52,35,0.15);
+        z-index: 20;
+        order: 4;
+    }
+ 
+    #nav.open{
+        display: flex;
+    }
+ 
+    #nav li{
+        width: 100%;
+        text-align: center;
+        padding: 14px 0;
+        border-bottom: 1px solid rgba(74,52,35,0.1);
+        color: #4A3423;
+    }
+ 
+    .dgd{
+        height: 420px;
+        background-position: center;
+        text-align: center;
+    }
+ 
+    .ddd, .dd{
+        padding-right: 0;
+        font-size: 34px;
+        text-align: center;
+        padding-top: 60px;
+    }
+ 
+    .dd{
+        padding-top: 0;
+    }
+ 
+    .ss, .s{
+        padding-right: 0;
+        text-align: center;
+        line-height: 24px;
+        font-size: 15px;
+    }
+ 
+    .s{
+        line-height: 20px;
+    }
+ 
+    .lop{
+        margin: 20px auto 0;
+    }
+.menu-btn {
+    width: 45px;
+    height: 40px;
+    border: none;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+}
+
+.menu-btn span {
+    width: 30px;
+    height: 3px;
+    background: #0F5C63;
+    border-radius: 10px;
+}
+ 
+    .imgs{
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        padding: 0 15px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+ 
+    .img-color{
+        width: 150px;
+    }
+ 
+    .gop{
+        padding: 0 20px;
+        text-align: center;
+    }
+ 
+    .fok{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+ 
+    .do{
+        padding: 0;
+        margin-top: 10px;
+    }
+ 
+    .llp{
+        padding: 0 20px;
+        text-align: center;
+        font-size: 15px;
+    }
+ 
+    .jj{
+        display: block;
+        margin: 15px auto;
+    }
+ 
+    .bole{
+        height: auto;
+        padding-bottom: 30px;
+        background-position: center;
+    }
+}
+ 
+/* =========================================
+   Small phones: up to 420px
+   ========================================= */
+@media (max-width: 420px){
+ 
+    .hh img{
+        height: 45px;
+        width: 45px;
+    }
+ 
+    .ffg{
+        font-size: 14px;
+    }
+ 
+    .ddd, .dd{
+        font-size: 28px;
+    }
+ 
+    .img1{
+        width: 160px;
+    }
+ 
+    .ds{
+        width: 160px;
+    }
+ 
+    .imgs{
+        gap: 18px;
+    }
+}
