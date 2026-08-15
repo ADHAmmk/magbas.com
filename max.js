@@ -18,4 +18,6 @@ function oppo(){
     vy.classList.toggle("feed")
     const l = document.getElementById("lol")
     l.classList.toggle("bod")
+    const opes = document.getElementById("footer-yes")
+    opes.classList.toggle("topet")
 }

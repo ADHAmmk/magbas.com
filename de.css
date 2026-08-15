@@ -242,6 +242,45 @@ button{
 
 }
 
+footer {
+    background-color: #4A3423;
+    height: 230px;
+}
+
+
+
+footer > div {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+    align-items: flex-start !important;
+    gap: 100px !important;
+    width: 100% !important;
+}
+
+.hok {
+    color: white;
+    padding: 10px !important;
+    
+    margin: 0 !important;
+}
+
+.dfdf {
+    color: white;
+    padding: 10px !important;
+    margin: 0 !important;
+}
+
+.f {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.topet{
+    background-color: black;
+}
+
+
 @media (max-width: 1024px){
  
     .navbar{
