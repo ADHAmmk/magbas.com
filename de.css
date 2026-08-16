@@ -51,12 +51,13 @@ img {
   
   height: 45px;
   position: relative;
+  margin-right: 130px;
      display: flex;
     justify-content: center;
     align-items: center;
   width: 140px;
   background: #9B6A3A;
-  margin-top: 10px;
+  
   border-radius: 10px;
   text-align: center;
   color: white;
@@ -281,10 +282,43 @@ footer > div {
 }
 
 
+.menu-toggle{
+    display: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+
 @media (max-width: 1024px){
  
     .navbar{
         padding: 5px 25px;
+    }
+
+    
+
+        .menu-btn {
+        display: block;
+        
+    }
+
+    #nav {
+        display: none;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 100%;
+        flex-direction: column;
+        background: #4A3423;
+        padding: 20px 0;
+        gap: 20px;
+    }
+
+    #nav.active {
+        display: flex;
     }
  
     #nav{
@@ -331,6 +365,16 @@ footer > div {
         position: relative;
     }
  
+  .menu-toggle{
+        display: block;
+        color: #9B6A3A;
+    }
+
+    #nav.active{
+        background: #4A3423;
+        
+    }
+
     .burger{
         display: flex;
         order: 2;
@@ -339,6 +383,7 @@ footer > div {
     .kkl{
         order: 3;
         margin-top: 0;
+        margin: 0;
         width: 120px;
     }
  
@@ -366,7 +411,7 @@ footer > div {
         text-align: center;
         padding: 14px 0;
         border-bottom: 1px solid rgba(74,52,35,0.1);
-        color: #4A3423;
+        color: white;
     }
  
     .dgd{

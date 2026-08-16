@@ -8,9 +8,7 @@ function col() {
     window.open(url, "_blank")
 }
 
-function toggleMenu() {
-    document.querySelector("#nav").classList.toggle("active");
-}
+
 
 function oppo(){
    
@@ -20,4 +18,11 @@ function oppo(){
     l.classList.toggle("bod")
     const opes = document.getElementById("footer-yes")
     opes.classList.toggle("topet")
+}
+
+let menu = document.getElementById("menu-toggle");
+let nav = document.getElementById("nav");
+
+menu.onclick = function(){
+    nav.classList.toggle("active");
 }
