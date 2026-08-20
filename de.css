@@ -246,12 +246,13 @@ button{
 footer {
     background-color: #4A3423;
     height: 230px;
+    display: flex;
 }
 
 
 
 footer > div {
-    display: flex !important;
+    display: flex;
     flex-direction: row !important;
     justify-content: center !important;
     align-items: flex-start !important;
@@ -272,6 +273,11 @@ footer > div {
     margin: 0 !important;
 }
 
+.lest{
+    list-style: none;
+    
+}
+
 .f {
     font-size: 14px;
     font-weight: 600;
@@ -289,7 +295,10 @@ footer > div {
     cursor: pointer;
 }
 
-
+.h{
+    text-decoration: none;
+    color: white;
+}
 
 
 @media (max-width: 1024px){
@@ -510,6 +519,11 @@ footer > div {
         padding-bottom: 30px;
         background-position: center;
     }
+    
+    h3{
+        font-size: 15px;
+    }
+    
 }
  
 /* =========================================
