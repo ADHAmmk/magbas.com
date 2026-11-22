@@ -3,124 +3,688 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="de.css">
-    <title>خمس نجوم</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>مخبز الخير | عيش بلدي ومخبوزات طازجة يومياً - السنبلاوين</title>
+    <meta name="description" content="مخبز الخير بالسنبلاوين - نقدم لكم أشهى وأطيب أنواع العيش البلدي، الأسمر، والشامي الطازج يومياً من بيت النار إلى مائدتكم بأعلى معايير النظافة والجودة.">
     <link rel="shortcut icon" href="3-removebg-preview.png" type="image/x-icon">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+    
+    <!-- Google Fonts: Cairo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="de.css">
 </head>
-<body id="ghj" class="gf">
-<header>
-    <nav class="navbar" id="gy">
-        <div class="hh">
-    <img src="2-removebg-preview.png" alt="">
-    <p class="ffg">مخبز الخير </p>
-</div>
-<div class="menu-toggle" id="menu-toggle">
-☰
-</div>
-     <ul id="nav">
-        <li>الرئيسيه</li>
-        <li>من نحن</li>
-        <li>منتجاتنا</li>
-        <li>الاسعار</li>
-        <li>تواصل معنا</li>
-        <li><button onclick="oppo()" id="box">🌙</button></li>
-   <div class="kkl">
-      <p class="nna" onclick="sandidd()">اتصل بنا 📞</p>
-     </div>
-     </ul>     
+<body id="ghj">
 
-     
+    <!-- Header & Navigation -->
+    <header id="main-header">
+        <nav class="navbar" id="gy">
+            <a href="#hero" class="brand">
+                <div class="brand-logo-wrap">
+                    <img src="2-removebg-preview.png" alt="شعار مخبز الخير">
+                </div>
+                <div class="brand-text">
+                    <span class="brand-title">مخبز الخير</span>
+                    <span class="brand-subtitle">طازج وسخن كل يوم</span>
+                </div>
+            </a>
 
-    </nav>
-</header>
+            <!-- Navigation Links -->
+            <ul class="nav-menu" id="nav">
+                <li><a href="#hero" class="nav-link active" id="hoo">الرئيسية</a></li>
+                <li><a href="#about" class="nav-link" id="vbmn">من نحن</a></li>
+                <li><a href="#products" class="nav-link" id="mol">منتجاتنا</a></li>
+                <li><a href="#features" class="nav-link" id="fore">مميزاتنا</a></li>
+                <li><a href="#reviews" class="nav-link">آراء العملاء</a></li>
+                <li><a href="#contact" class="nav-link" id="for">تواصل معنا</a></li>
+            </ul>
 
-    <section class="dgd" >
-     <h1 class="ddd">عيش طازج</h1>
-     <h1 class="dd">كل يوم</h1>
-     <p class="ss">نقدم لقكم افضل انواع العيش</p>
-     <p class="s">طازج صحي وبأفضل جوده</p>
-     <p class="lop" onclick="sandidd()">اطلب الان</p>
-    </section>
+            <!-- Header Action Buttons -->
+            <div class="nav-actions">
+                <!-- Theme Toggle Button -->
+                <button type="button" class="theme-toggle-btn" id="box" onclick="oppo()" title="تبديل الوضع الليلي / النهاري" aria-label="تبديل المظهر">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
 
-    <section id="lol" class="ffvf">
-     <h1 class="fs">منتجاتنا</h1>
-     <img class="img-color" src="ChatGPT_Image_29_يوليو_2026__03_13_35_م-removebg-preview.png" alt="">
-     <div class="imgs">
-        <div class="img1">
-            <img class="ds" src="9f6d5da7-6466-4813-9289-5b43af554422.jpg" alt="">
-            <h5>عيش بلدي</h5>
-             <h6>5 جنيه / 20 قطعه</h6>
-             <button class="hhg" onclick="sandidd()">اطلب الان</button>
-        </div>
-     
+                <!-- Direct Call / Order Button -->
+                <button type="button" class="btn-header-order" onclick="openOrderModal('عيش بلدي طازج', 5, '20 رغيف')">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <span>اطلب الآن</span>
+                </button>
 
-            <div class="img1">
-            <img  class="ds" src="322f6495-8a37-4d49-adb7-1565832109fb.jpg" alt="">
-            <h5>عيش اسمر</h5>
-             <h6>7 جنيه / 20 قطعه</h6>
-             <button  onclick="sandidd()" class="hhg">اطلب الان</button>
-        </div>
-     
-            <div class="img1">
-            <img class="ds" src="a4484cca-0df0-4397-a0d8-73a50113c60b.jpg" alt="">
-            <h5>عيش شامي</h5>
-             <h6>6 جنيه / 20 قطعه</h6>
-             <button class="hhg" onclick="col()">اطلب الان</button>
-        </div>
+                <!-- Mobile Menu Button -->
+                <button type="button" class="menu-toggle" id="menu-toggle" aria-label="فتح القائمة">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
 
-      
-     
-    </div>
-    </section>
-    <section class="bole">
-        <div class="fok">
-      <h1 class="gop">من نحن</h1>
-      <img class="do" src="ChatGPT_Image_29_يوليو_2026__03_13_35_م-removebg-preview.png" alt="">
-    </div>
-    <div class="llp">
-    <p>نحن مخبز الخبر,نلتزم بتقديم افضل انواع العيش المصنوعه</p>
-    <p>من اجود المكونات وبأيدي خبازين محترفين.</p>
-    <p>هدفنا رضاكم وصحتكم</p>
-</div>
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section" id="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <i class="fa-solid fa-fire-burner"></i>
+                        <span>الفرن شغال الآن • خبيز بلدي ساخن</span>
+                    </div>
 
-<button class="jj">اقرأ المزيد</button>
-    </section>
+                    <h1 class="hero-title">
+                        عيش بلدي طازج.. <br>
+                        <span class="highlight">بنكهة زمان وأصالة الطعم</span>
+                    </h1>
+
+                    <p class="hero-desc">
+                        نقدم لكم في <strong>مخبز الخير</strong> أطيب أنواع الخبز البلدي والشامي والأسمر الصحي، مخبوز بأجود أنواع الدقيق وبأيدي خبازين محترفين ليصلكم ساخناً وطازجاً كل صباح.
+                    </p>
+
+                    <div class="hero-actions">
+                        <button type="button" class="btn-primary" onclick="openOrderModal('عيش بلدي طازج', 5, '20 رغيف')">
+                            <i class="fa-brands fa-whatsapp"></i>
+                            <span>اطلب الآن عبر واتساب</span>
+                        </button>
+                        <a href="#products" class="btn-secondary">
+                            <i class="fa-solid fa-bread-slice"></i>
+                            <span>تصفح قائمة الأسعار</span>
+                        </a>
+                    </div>
+
+                    <div class="hero-features-strip">
+                        <div class="hero-stat-item">
+                            <div class="hero-stat-icon"><i class="fa-solid fa-wheat-awn"></i></div>
+                            <span>دقيق نقي 100%</span>
+                        </div>
+                        <div class="hero-stat-item">
+                            <div class="hero-stat-icon"><i class="fa-solid fa-clock"></i></div>
+                            <span>يومياً من 6ص إلى 6م</span>
+                        </div>
+                        <div class="hero-stat-item">
+                            <div class="hero-stat-icon"><i class="fa-solid fa-truck-fast"></i></div>
+                            <span>توصيل سريع بالسنبلاوين</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features / Why Choose Us -->
+        <section class="features-section" id="features">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">لماذا تختارنا؟</span>
+                    <h2 class="section-title">سر تميز مخبز الخير</h2>
+                    <div class="section-divider">
+                        <img src="divider-wheat.png" alt="زخرفة">
+                    </div>
+                    <p class="section-desc">نحرص على أدق التفاصيل من اختيار حبة القمح وحتى خروج الرغيف الساخن من الفرن</p>
+                </div>
+
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon-box">
+                            <i class="fa-solid fa-fire"></i>
+                        </div>
+                        <h3>خبيز طازج على مدار اليوم</h3>
+                        <p>لا نقدم خبزاً مسبق التحضير، أفراننا تعمل طوال اليوم لضمان استلامك للرغيف ساخناً وهشاً في أي وقت.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon-box">
+                            <i class="fa-solid fa-seedling"></i>
+                        </div>
+                        <h3>أجود المكونات الطبيعية</h3>
+                        <p>نعتمد على دقيق ممتاز وخميرة طبيعية خالية تماماً من أي محسنات أو إضافات كيميائية ضارة بالصحة.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon-box">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <h3>نظافة فائقة واهتمام صحي</h3>
+                        <p>نطبق أعلى معايير النظافة والتعقيم المستمر لكافة أدوات العجن والخبز بإشراف دقيق ومستمر.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon-box">
+                            <i class="fa-solid fa-tags"></i>
+                        </div>
+                        <h3>أسعار تنافسية وعروض للكميات</h3>
+                        <p>أسعار في متناول الجميع مع عروض ممتازة للمناسبات والمطاعم وتجار التجزئة والكميات الكبيرة.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Section -->
+        <section class="products-section" id="products">
+            <div class="container">
+                <div class="section-header" id="lol">
+                    <span class="section-badge">قائمة المنتجات</span>
+                    <h2 class="section-title">أشهى أنواع الخبز والمخبوزات</h2>
+                    <div class="section-divider">
+                        <img src="divider-wheat.png" alt="زخرفة">
+                    </div>
+                    <p class="section-desc">اختر ما يناسب ذوقك واحتياج عائلتك، واطلبه مباشرة بضغطة زر</p>
+                </div>
+
+                <!-- Category Filter Buttons -->
+                <div class="filter-tabs">
+                    <button type="button" class="filter-btn active" data-filter="all">جميع المنتجات</button>
+                    <button type="button" class="filter-btn" data-filter="baladi">العيش البلدي</button>
+                    <button type="button" class="filter-btn" data-filter="healthy">صحي ودايت</button>
+                    <button type="button" class="filter-btn" data-filter="bakery">الشامي والمخبوزات</button>
+                </div>
+
+                <!-- Products Grid -->
+                <div class="products-grid">
+                    <!-- Product 1: عيش بلدي -->
+                    <div class="product-card" data-category="baladi">
+                        <div class="product-image-wrap">
+                            <img src="9f6d5da7-6466-4813-9289-5b43af554422.jpg" alt="عيش بلدي فاخر">
+                            <div class="product-badge">
+                                <i class="fa-solid fa-star"></i>
+                                <span>الأكثر طلباً</span>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">عيش بلدي مصري فاخر</h3>
+                            <p class="product-desc">مخبوز بالردة الناعمة ودقيق بلدي فاخر، كامل الرقة وطري ومثالي لجميع وجبات العائلة اليومية.</p>
+                            <div class="product-pricing-row">
+                                <div class="price-tag">
+                                    <span class="price-number">5</span>
+                                    <span class="price-currency">جنيه</span>
+                                </div>
+                                <span class="price-unit">لكل 20 رغيف</span>
+                            </div>
+                            <div class="product-card-actions">
+                                <div class="qty-control">
+                                    <button type="button" class="qty-btn" onclick="changeQty(this, -1)">-</button>
+                                    <span class="qty-number">1</span>
+                                    <button type="button" class="qty-btn" onclick="changeQty(this, 1)">+</button>
+                                </div>
+                                <button type="button" class="btn-card-order" onclick="quickOrderFromCard(this, 'عيش بلدي مصري فاخر', 5, '20 رغيف')">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                    <span>اطلب الآن</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 2: عيش أسمر -->
+                    <div class="product-card" data-category="healthy">
+                        <div class="product-image-wrap">
+                            <img src="322f6495-8a37-4d49-adb7-1565832109fb.jpg" alt="عيش أسمر صحي بالردة">
+                            <div class="product-badge">
+                                <i class="fa-solid fa-heart-pulse"></i>
+                                <span>صحي 100%</span>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">عيش أسمر بالردة (دايت)</h3>
+                            <p class="product-desc">غني بالألياف الطبيعية ومفيد لمرضى السكر ومتبعي الحمية الغذائية، يساعد على الهضم ويمنحك شبعاً طويلاً.</p>
+                            <div class="product-pricing-row">
+                                <div class="price-tag">
+                                    <span class="price-number">7</span>
+                                    <span class="price-currency">جنيه</span>
+                                </div>
+                                <span class="price-unit">لكل 20 رغيف</span>
+                            </div>
+                            <div class="product-card-actions">
+                                <div class="qty-control">
+                                    <button type="button" class="qty-btn" onclick="changeQty(this, -1)">-</button>
+                                    <span class="qty-number">1</span>
+                                    <button type="button" class="qty-btn" onclick="changeQty(this, 1)">+</button>
+                                </div>
+                                <button type="button" class="btn-card-order" onclick="quickOrderFromCard(this, 'عيش أسمر بالردة (دايت)', 7, '20 رغيف')">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                    <span>اطلب الآن</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 3: عيش شامي -->
+                    <div class="product-card" data-category="bakery">
+                        <div class="product-image-wrap">
+                            <img src="a4484cca-0df0-4397-a0d8-73a50113c60b.jpg" alt="عيش شامي أبيض">
+                            <div class="product-badge">
+                                <i class="fa-solid fa-sun"></i>
+                                <span>طري وهش</span>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">عيش شامي أبيض فاخر</h3>
+                            <p class="product-desc">خبز أبيض خفيف وهش مناسب للساندوتشات، المشويات، وأشهى الوجبات السريعة في البيت والمطاعم.</p>
+                            <div class="product-pricing-row">
+                                <div class="price-tag">
+                                    <span class="price-number">6</span>
+                                    <span class="price-currency">جنيه</span>
+                                </div>
+                                <span class="price-unit">لكل 20 رغيف</span>
+                            </div>
+                            <div class="product-card-actions">
+                                <div class="qty-control">
+                                    <button type="button" class="qty-btn" onclick="changeQty(this, -1)">-</button>
+                                    <span class="qty-number">1</span>
+                                    <button type="button" class="qty-btn" onclick="changeQty(this, 1)">+</button>
+                                </div>
+                                <button type="button" class="btn-card-order" onclick="quickOrderFromCard(this, 'عيش شامي أبيض فاخر', 6, '20 رغيف')">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                    <span>اطلب الآن</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 4: مخبوزات وفينو -->
+                    <div class="product-card" data-category="bakery">
+                        <div class="product-image-wrap">
+                            <img src="images.jpg" alt="فينو ومخبوزات طازجة">
+                            <div class="product-badge">
+                                <i class="fa-solid fa-sparkles"></i>
+                                <span>للمدارس والرحلات</span>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">فينو ومخبوزات طازجة</h3>
+                            <p class="product-desc">عيش فينو قطني طازج مع السمسم، ممتاز لتحضير لانش بوكس المدارس وساندوتشات الصباح الشهية.</p>
+                            <div class="product-pricing-row">
+                                <div class="price-tag">
+                                    <span class="price-number">10</span>
+                                    <span class="price-currency">جنيه</span>
+                                </div>
+                                <span class="price-unit">لكل دستة (12 رغيف)</span>
+                            </div>
+                            <div class="product-card-actions">
+                                <div class="qty-control">
+                                    <button type="button" class="qty-btn" onclick="changeQty(this, -1)">-</button>
+                                    <span class="qty-number">1</span>
+                                    <button type="button" class="qty-btn" onclick="changeQty(this, 1)">+</button>
+                                </div>
+                                <button type="button" class="btn-card-order" onclick="quickOrderFromCard(this, 'فينو ومخبوزات طازجة', 10, 'دستة (12 رغيف)')">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                    <span>اطلب الآن</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 5: عيش بلدي مرحرح -->
+                    <div class="product-card" data-category="baladi">
+                        <div class="product-image-wrap">
+                            <img src="1b862cbe-ee58-4430-9697-13c963065683.jpg" alt="عيش بلدي خفيف مرحرح">
+                            <div class="product-badge">
+                                <i class="fa-solid fa-wheat-awn"></i>
+                                <span>خفيف ولذيذ</span>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">عيش بلدي خفيف (مرحرح)</h3>
+                            <p class="product-desc">رغيف رقيق ومحمص على النار الهادئة، مناسب للفول والطعمية والأكلات الشعبية التراثية الأصيلة.</p>
+                            <div class="product-pricing-row">
+                                <div class="price-tag">
+                                    <span class="price-number">6</span>
+                                    <span class="price-currency">جنيه</span>
+                                </div>
+                                <span class="price-unit">لكل 20 رغيف</span>
+                            </div>
+                            <div class="product-card-actions">
+                                <div class="qty-control">
+                                    <button type="button" class="qty-btn" onclick="changeQty(this, -1)">-</button>
+                                    <span class="qty-number">1</span>
+                                    <button type="button" class="qty-btn" onclick="changeQty(this, 1)">+</button>
+                                </div>
+                                <button type="button" class="btn-card-order" onclick="quickOrderFromCard(this, 'عيش بلدي خفيف (مرحرح)', 6, '20 رغيف')">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                    <span>اطلب الآن</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section class="about-section" id="about">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-image-column">
+                        <div class="about-image-card">
+                            <img src="about-us-background(1).png" alt="مخبز الخير أصالة وجودة">
+                        </div>
+                        <div class="about-badge-float">
+                            <i class="fa-solid fa-award about-badge-icon"></i>
+                            <div>
+                                <h4 class="about-badge-title">+10 سنوات خبرة</h4>
+                                <span class="about-badge-subtitle">في صناعة الخبز البلدي الأصيل</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-content-column">
+                        <div class="section-header" style="text-align: right; margin-bottom: 1.5rem;">
+                            <span class="section-badge">من نحن</span>
+                            <h2 class="section-title">حكايتنا مع الرغيف.. إخلاص وجودة</h2>
+                            <div class="section-divider" style="margin: 0.5rem 0 1rem;">
+                                <img src="divider-wheat.png" alt="زخرفة">
+                            </div>
+                        </div>
+
+                        <p class="about-lead">
+                            نحن <strong>مخبز الخير</strong> بمدينة السنبلاوين، بدأنا رحلتنا بهدف بسيط ورسالة واضحة: تقديم رغيف عيش نقي، طازج، وصحي يجمع بين مذاق المخبوزات المصرية التراثية وأحدث معايير النظافة والاحترافية.
+                        </p>
+
+                        <div class="about-points-list">
+                            <div class="about-point-item">
+                                <div class="about-point-icon"><i class="fa-solid fa-check"></i></div>
+                                <div class="about-point-text">
+                                    <h4>أيادٍ خبيرة وعمالة مدربة</h4>
+                                    <p>يعمل لدينا أمهر الخبازين الذين توارثوا سر الصنعة لسنوات طويلة مع حب وإخلاص للعمل.</p>
+                                </div>
+                            </div>
+
+                            <div class="about-point-item">
+                                <div class="about-point-icon"><i class="fa-solid fa-check"></i></div>
+                                <div class="about-point-text">
+                                    <h4>التزام صارم بمعايير الصحة والسلامة</h4>
+                                    <p>نولي اهتماماً فائقاً بنظافة بيئة الخبز وتطهير المعدات باستمرار لضمان أمان عملائنا.</p>
+                                </div>
+                            </div>
+
+                            <div class="about-point-item">
+                                <div class="about-point-icon"><i class="fa-solid fa-check"></i></div>
+                                <div class="about-point-text">
+                                    <h4>خدمة سريعة واحترام لثقة العميل</h4>
+                                    <p>رضاكم هو رأس مالنا الحقيقي، ونسعى دائماً لتلبية كافة طلبات المنازل والمطاعم والمناسبات.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <button type="button" class="btn-primary" onclick="openOrderModal('عيش بلدي طازج', 5, '20 رغيف')">
+                                <i class="fa-solid fa-hand-holding-heart"></i>
+                                <span>تواصل واطلب الآن</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Order Banner -->
+        <section class="cta-banner-section">
+            <div class="container">
+                <div class="cta-banner-card">
+                    <div class="cta-content">
+                        <h2>هل لديك مناسبة أو مطعم وتحتاج كميات كبيرة؟</h2>
+                        <p>نوفر طلبيات خاصة للمطاعم، الحفلات، والمناسبات الكبرى بأسعار خاصة وخبيز ساخن يتم تجهيزه في الموعد المحدد بكل دقة.</p>
+                    </div>
+                    <div class="cta-actions">
+                        <a href="https://wa.me/201013984024?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%B7%D9%84%D8%A8%D9%8A%D8%A9%20%D9%83%D9%85%D9%8A%D8%A7%D8%AA%20%D9%85%D9%86%20%D9%85%D8%AE%D8%A8%D8%B2%20%D8%A7%D9%84%D8%AE%D9%8A%D8%B1" target="_blank" class="btn-whatsapp-cta">
+                            <i class="fa-brands fa-whatsapp"></i>
+                            <span>تواصل عبر واتساب</span>
+                        </a>
+                        <a href="tel:01013984024" class="btn-phone-cta">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>اتصل بنا مباشرة: 01013984024</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials / Reviews -->
+        <section class="testimonials-section" id="reviews">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">شهادات نعتز بها</span>
+                    <h2 class="section-title">ماذا يقول عملاؤنا عنا؟</h2>
+                    <div class="section-divider">
+                        <img src="divider-wheat.png" alt="زخرفة">
+                    </div>
+                    <p class="section-desc">ثقة أهل السنبلاوين هي أكبر دافع لنا للاستمرار والتطوير المستمر</p>
+                </div>
+
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="testimonial-quote">"ما شاء الله تبارك الله، أنظف وأطعم عيش بلدي في السنبلاوين كلها. الرغيف بيقعد لتاني يوم طري ومورق زي ما هو."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">أ</div>
+                            <div class="author-info">
+                                <h4>أحمد السيد</h4>
+                                <span>زبون دائم</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="testimonial-quote">"العيش الأسمر بالردة ممتاز جداً، فرق معايا كتير في الدايت، مش ناشف وطعمه حلو وخفيف على المعدة. بالتوفيق دائماً."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">م</div>
+                            <div class="author-info">
+                                <h4>محمود الشربيني</h4>
+                                <span>السنبلاوين</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="testimonial-quote">"طلبت منهم كمية كبيرة لعزومة وكانت واصلة في معادها بالدقيقة وسخنة وكله انبسط من الطعم والجودة. معاملة راقية جداً."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">ع</div>
+                            <div class="author-info">
+                                <h4>علي رضا</h4>
+                                <span>صاحب مطعم</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
     <footer id="footer-yes">
-        
-    <div class="hok">
-    <ul class="lest">
-    <h3>روابط سريعه</h3>
-    <li class="f"><a class="h" href="#gy">الرئيسيه</a></li>
-    <li class="f"><a class="h" href="">من نحن</a></li>
-    <li class="f">منتجاتنا</li>
-    <li class="f">الاسعار</li>
-    <li class="f"> تواصل معنا</li>
-</ul>
-</div>
+        <div class="container">
+            <div class="footer-grid" id="footer">
+                <!-- Column 1: Brand Info -->
+                <div class="footer-brand">
+                    <a href="#hero" class="brand">
+                        <div class="brand-logo-wrap">
+                            <img src="2-removebg-preview.png" alt="شعار مخبز الخير">
+                        </div>
+                        <div class="brand-text">
+                            <span class="brand-title">مخبز الخير</span>
+                            <span class="brand-subtitle" style="color: rgba(255,255,255,0.7);">السنبلاوين - الدقهلية</span>
+                        </div>
+                    </a>
+                    <p class="footer-desc">
+                        نخبز لكم بكل حب وأمانة يومياً بأجود المكونات الطبيعية. هدفنا الأول صحتكم وابتسامتكم مع كل لقمة هنية.
+                    </p>
+                    <div class="social-links">
+                        <a href="https://wa.me/201013984024" target="_blank" class="social-btn" title="واتساب" aria-label="واتساب"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://facebook.com" target="_blank" class="social-btn" title="فيسبوك" aria-label="فيسبوك"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://instagram.com" target="_blank" class="social-btn" title="انستجرام" aria-label="انستجرام"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://tiktok.com" target="_blank" class="social-btn" title="تيك توك" aria-label="تيك توك"><i class="fa-brands fa-tiktok"></i></a>
+                    </div>
+                </div>
 
-<div class="hok">
-    <ul class="lest">
-        <h3>حسابات التواصل</h3>
-        <li> <a class="h" href="">facebook</a></li>
-        <li> <a class="h" href="">whatsapp</a></li>
-        <li><a class="h" href="">tiktok</a></li>
-        <li><a class="h" href="">instgram</a></li>
-    </ul>
-</div>
+                <!-- Column 2: Quick Links -->
+                <div class="footer-col">
+                    <h3>روابط سريعة</h3>
+                    <ul class="footer-links">
+                        <li><a href="#hero" class="footer-link"><i class="fa-solid fa-chevron-left"></i> الرئيسية</a></li>
+                        <li><a href="#about" class="footer-link"><i class="fa-solid fa-chevron-left"></i> من نحن</a></li>
+                        <li><a href="#products" class="footer-link"><i class="fa-solid fa-chevron-left"></i> قائمة المنتجات والأسعار</a></li>
+                        <li><a href="#features" class="footer-link"><i class="fa-solid fa-chevron-left"></i> مميزاتنا</a></li>
+                        <li><a href="#reviews" class="footer-link"><i class="fa-solid fa-chevron-left"></i> آراء العملاء</a></li>
+                    </ul>
+                </div>
 
-<div class="dfdf">
-<ul class="lest">
-<h3>تواصل معنا</h3>
-<li class="f">📞 01013984024</li>
-<li class="f">📍الدقهليه - السنبلاوين</li>
-<li class="f">🕚من 6 صباحا - 6 مساء</li> 
-</ul>
-</div>
+                <!-- Column 3: Bakery Products -->
+                <div class="footer-col">
+                    <h3>منتجاتنا</h3>
+                    <ul class="footer-links">
+                        <li><a href="#products" class="footer-link"><i class="fa-solid fa-chevron-left"></i> عيش بلدي مصري</a></li>
+                        <li><a href="#products" class="footer-link"><i class="fa-solid fa-chevron-left"></i> عيش أسمر بالردة للدايت</a></li>
+                        <li><a href="#products" class="footer-link"><i class="fa-solid fa-chevron-left"></i> عيش شامي أبيض</a></li>
+                        <li><a href="#products" class="footer-link"><i class="fa-solid fa-chevron-left"></i> فينو ومخبوزات</a></li>
+                        <li><a href="#products" class="footer-link"><i class="fa-solid fa-chevron-left"></i> طلبيات المطاعم والمناسبات</a></li>
+                    </ul>
+                </div>
 
+                <!-- Column 4: Contact & Working Hours -->
+                <div class="footer-col" id="contact">
+                    <h3>تواصل معنا</h3>
+                    <div class="contact-info-list">
+                        <div class="contact-info-item">
+                            <i class="fa-solid fa-phone"></i>
+                            <div>
+                                <span>الهاتف المباشر:</span><br>
+                                <a href="tel:01013984024" dir="ltr">01013984024</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-item">
+                            <i class="fa-brands fa-whatsapp"></i>
+                            <div>
+                                <span>طلب واتساب سريع:</span><br>
+                                <a href="https://wa.me/201013984024" target="_blank" dir="ltr">+20 101 398 4024</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div>
+                                <span>العنوان:</span><br>
+                                <span>محافظة الدقهلية - مدينة السنبلاوين</span>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-item">
+                            <i class="fa-solid fa-clock"></i>
+                            <div>
+                                <span>مواعيد العمل:</span><br>
+                                <span>يومياً من 6:00 صباحاً حتى 6:00 مساءً</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>جميع الحقوق محفوظة لمخبز الخير © 2026 • صُنع بكل فخر وحب 🥖</p>
+                <p>السنبلاوين - محافظة الدقهلية</p>
+            </div>
+        </div>
     </footer>
-<script src="max.js"></script>
+
+    <!-- Interactive WhatsApp Order Modal -->
+    <div class="modal-overlay" id="orderModalOverlay" onclick="handleModalBackdropClick(event)">
+        <div class="order-modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+            <div class="modal-header">
+                <div class="modal-title-wrap">
+                    <div class="modal-icon">
+                        <i class="fa-solid fa-basket-shopping"></i>
+                    </div>
+                    <div>
+                        <h3 id="modalTitle">طلب سريع عبر واتساب</h3>
+                        <p>املأ البيانات واضغط إرسال وسيصلك الرد فوراً</p>
+                    </div>
+                </div>
+                <button type="button" class="modal-close-btn" onclick="closeOrderModal()" aria-label="إغلاق النافذة">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+
+            <form id="orderForm" onsubmit="handleOrderSubmit(event)">
+                <div class="form-group">
+                    <label for="orderCustomerName">الاسم الكريم:</label>
+                    <input type="text" id="orderCustomerName" class="form-input" placeholder="اكتب اسمك هنا..." required>
+                </div>
+
+                <div class="form-group">
+                    <label for="orderProductSelect">نوع الخبز المطلوب:</label>
+                    <select id="orderProductSelect" class="form-select" onchange="updateModalTotal()">
+                        <option value="عيش بلدي مصري فاخر" data-price="5" data-unit="20 رغيف">عيش بلدي مصري فاخر (5 جنيه / 20 رغيف)</option>
+                        <option value="عيش أسمر بالردة (دايت)" data-price="7" data-unit="20 رغيف">عيش أسمر بالردة للدايت (7 جنيه / 20 رغيف)</option>
+                        <option value="عيش شامي أبيض فاخر" data-price="6" data-unit="20 رغيف">عيش شامي أبيض فاخر (6 جنيه / 20 رغيف)</option>
+                        <option value="فينو ومخبوزات طازجة" data-price="10" data-unit="دستة (12 رغيف)">فينو ومخبوزات طازجة (10 جنيه / دستة)</option>
+                        <option value="عيش بلدي خفيف (مرحرح)" data-price="6" data-unit="20 رغيف">عيش بلدي خفيف مرحرح (6 جنيه / 20 رغيف)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="orderQuantity">الكمية المطلوبة:</label>
+                    <div class="qty-control" style="width: fit-content; margin-bottom: 0.5rem;">
+                        <button type="button" class="qty-btn" onclick="modalChangeQty(-1)">-</button>
+                        <span class="qty-number" id="modalQtyNumber">1</span>
+                        <button type="button" class="qty-btn" onclick="modalChangeQty(1)">+</button>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="orderAddress">العنوان أو مكان التوصيل (اختياري):</label>
+                    <input type="text" id="orderAddress" class="form-input" placeholder="مثال: السنبلاوين - شارع المحطة أو استلام من المخبز">
+                </div>
+
+                <div class="form-group">
+                    <label for="orderNotes">ملاحظات إضافية (اختياري):</label>
+                    <textarea id="orderNotes" class="form-textarea" rows="2" placeholder="أي تفاصيل خاصة مثل درجة التحميص أو وقت الاستلام..."></textarea>
+                </div>
+
+                <div class="order-calc-box">
+                    <span class="order-calc-label">إجمالي التكلفة التقديرية:</span>
+                    <span class="order-calc-val" id="modalTotalEstimate">5 جنيه</span>
+                </div>
+
+                <button type="submit" class="btn-submit-order">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <span>إرسال الطلب عبر واتساب 💬</span>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Floating Action Buttons -->
+    <div class="floating-actions">
+        <a href="https://wa.me/201013984024" target="_blank" class="btn-floating-wa" title="تواصل عبر واتساب" aria-label="تواصل عبر واتساب">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        <button type="button" class="btn-back-to-top" id="btnBackToTop" onclick="scrollToTop()" title="العودة لأعلى الصفحة" aria-label="العودة لأعلى">
+            <i class="fa-solid fa-arrow-up"></i>
+        </button>
+    </div>
+
+    <!-- Main JavaScript -->
+    <script src="max.js"></script>
 </body>
 </html>
