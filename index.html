@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>مخبز الخير | عيش بلدي ومخبوزات طازجة يومياً - السنبلاوين</title>
-    <meta name="description" content="مخبز الخير بالسنبلاوين - نقدم لكم أشهى وأطيب أنواع العيش البلدي، الأسمر، والشامي الطازج يومياً من بيت النار إلى مائدتكم بأعلى معايير النظافة والجودة.">
+    <meta name="description" content="مخبز الخير بالسنبلاوين - أرقى تجربة للخبز المصري البلدي، الأسمر، والشامي الطازج يومياً بنكهة أصيلة وأعلى معايير النظافة والجودة.">
     <link rel="shortcut icon" href="3-removebg-preview.png" type="image/x-icon">
     
     <!-- Google Fonts: Cairo -->
@@ -20,7 +20,10 @@
 </head>
 <body id="ghj">
 
-    <!-- Header & Navigation -->
+    <!-- Scroll Reading Progress Bar -->
+    <div id="scrollProgressBar" aria-hidden="true"></div>
+
+    <!-- Header & Navigation (21st Glassmorphism) -->
     <header id="main-header">
         <nav class="navbar" id="gy">
             <a href="#hero" class="brand">
@@ -29,16 +32,20 @@
                 </div>
                 <div class="brand-text">
                     <span class="brand-title">مخبز الخير</span>
-                    <span class="brand-subtitle">طازج وسخن كل يوم</span>
+                    <span class="brand-subtitle">
+                        <span class="radar-dot"></span>
+                        طازج وسخن كل يوم
+                    </span>
                 </div>
             </a>
 
             <!-- Navigation Links -->
             <ul class="nav-menu" id="nav">
                 <li><a href="#hero" class="nav-link active" id="hoo">الرئيسية</a></li>
-                <li><a href="#about" class="nav-link" id="vbmn">من نحن</a></li>
-                <li><a href="#products" class="nav-link" id="mol">منتجاتنا</a></li>
                 <li><a href="#features" class="nav-link" id="fore">مميزاتنا</a></li>
+                <li><a href="#products" class="nav-link" id="mol">منتجاتنا</a></li>
+                <li><a href="#gallery" class="nav-link">معرض الصور</a></li>
+                <li><a href="#about" class="nav-link" id="vbmn">من نحن</a></li>
                 <li><a href="#reviews" class="nav-link">آراء العملاء</a></li>
                 <li><a href="#contact" class="nav-link" id="for">تواصل معنا</a></li>
             </ul>
@@ -51,7 +58,7 @@
                 </button>
 
                 <!-- Direct Call / Order Button -->
-                <button type="button" class="btn-header-order" onclick="openOrderModal('عيش بلدي طازج', 5, '20 رغيف')">
+                <button type="button" class="btn-header-order" onclick="openOrderModal('عيش بلدي مصري فاخر', 5, '20 رغيف')">
                     <i class="fa-brands fa-whatsapp"></i>
                     <span>اطلب الآن</span>
                 </button>
@@ -66,96 +73,224 @@
 
     <!-- Main Content -->
     <main>
-        <!-- Hero Section -->
-        <section class="hero-section" id="hero">
+        <!-- 21st.dev Honey Ember Hero Section -->
+        <section class="hero-section honey-ember-wrap" id="hero">
+            <!-- 21st.dev Ambient Honey Ember Glows -->
+            <div class="honey-ember-blobs" aria-hidden="true">
+                <div class="ember-blob blob-1"></div>
+                <div class="ember-blob blob-2"></div>
+                <div class="ember-blob blob-3"></div>
+                <div class="ember-blob blob-4"></div>
+            </div>
+            
+            <!-- Rising Oven Sparks / Particles -->
+            <div class="sparks-container" aria-hidden="true">
+                <div class="spark"></div>
+                <div class="spark"></div>
+                <div class="spark"></div>
+                <div class="spark"></div>
+                <div class="spark"></div>
+            </div>
+
+            <div class="dot-grid-pattern" aria-hidden="true"></div>
+
             <div class="container">
-                <div class="hero-content">
-                    <div class="hero-badge">
-                        <i class="fa-solid fa-fire-burner"></i>
-                        <span>الفرن شغال الآن • خبيز بلدي ساخن</span>
+                <div class="hero-grid">
+                    <!-- Left Hero Content -->
+                    <div class="hero-content" data-reveal="up">
+                        <div class="hero-badge-pill">
+                            <i class="fa-solid fa-fire-burner" style="color: var(--accent-ember);"></i>
+                            <span>الفرن شغال الآن • خبيز بلدي ساخن من بيت النار</span>
+                        </div>
+
+                        <h1 class="hero-title">
+                            عيش بلدي طازج.. <br>
+                            <span class="highlight-ember">بنكهة زمان وأصالة الطعم</span>
+                        </h1>
+
+                        <p class="hero-desc">
+                            نقدم لكم في <strong>مخبز الخير</strong> أطيب أنواع الخبز البلدي والشامي والأسمر الصحي، مخبوز بأجود أنواع الدقيق وبأيدي خبازين محترفين ليصلكم ساخناً وطازجاً كل صباح.
+                        </p>
+
+                        <div class="hero-actions">
+                            <button type="button" class="btn-primary-shimmer" onclick="openOrderModal('عيش بلدي مصري فاخر', 5, '20 رغيف')">
+                                <i class="fa-brands fa-whatsapp"></i>
+                                <span>اطلب الآن عبر واتساب</span>
+                            </button>
+                            <a href="#products" class="btn-secondary-glass">
+                                <i class="fa-solid fa-bread-slice"></i>
+                                <span>تصفح قائمة الأسعار</span>
+                            </a>
+                        </div>
+
+                        <div class="hero-stats-row">
+                            <div class="hero-stat-box">
+                                <div class="hero-stat-icon"><i class="fa-solid fa-wheat-awn"></i></div>
+                                <div class="hero-stat-info">
+                                    <strong>100% طبيعي</strong>
+                                    <span>دقيق نقي بدون إضافات</span>
+                                </div>
+                            </div>
+                            <div class="hero-stat-box">
+                                <div class="hero-stat-icon"><i class="fa-solid fa-clock"></i></div>
+                                <div class="hero-stat-info">
+                                    <strong>6:00 ص - 6:00 م</strong>
+                                    <span>خبيز يومي مستمر</span>
+                                </div>
+                            </div>
+                            <div class="hero-stat-box">
+                                <div class="hero-stat-icon"><i class="fa-solid fa-truck-fast"></i></div>
+                                <div class="hero-stat-info">
+                                    <strong>توصيل سريع</strong>
+                                    <span>للمنازل والمطاعم</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
-                    <h1 class="hero-title">
-                        عيش بلدي طازج.. <br>
-                        <span class="highlight">بنكهة زمان وأصالة الطعم</span>
-                    </h1>
-
-                    <p class="hero-desc">
-                        نقدم لكم في <strong>مخبز الخير</strong> أطيب أنواع الخبز البلدي والشامي والأسمر الصحي، مخبوز بأجود أنواع الدقيق وبأيدي خبازين محترفين ليصلكم ساخناً وطازجاً كل صباح.
-                    </p>
-
-                    <div class="hero-actions">
-                        <button type="button" class="btn-primary" onclick="openOrderModal('عيش بلدي طازج', 5, '20 رغيف')">
-                            <i class="fa-brands fa-whatsapp"></i>
-                            <span>اطلب الآن عبر واتساب</span>
-                        </button>
-                        <a href="#products" class="btn-secondary">
-                            <i class="fa-solid fa-bread-slice"></i>
-                            <span>تصفح قائمة الأسعار</span>
-                        </a>
-                    </div>
-
-                    <div class="hero-features-strip">
-                        <div class="hero-stat-item">
-                            <div class="hero-stat-icon"><i class="fa-solid fa-wheat-awn"></i></div>
-                            <span>دقيق نقي 100%</span>
+                    <!-- Right Hero Showcase Visual -->
+                    <div class="hero-visual-column" data-reveal="zoom">
+                        <div class="hero-main-card" onclick="openLightboxFromSrc('hero-banner.png', 'خبيز بلدي ساخن من بيت النار', 'أرقى تجربة للخبز المصري البلدي المحمص في السنبلاوين')">
+                            <img src="hero-banner.png" alt="مخبز الخير خبيز بلدي طازج">
                         </div>
-                        <div class="hero-stat-item">
-                            <div class="hero-stat-icon"><i class="fa-solid fa-clock"></i></div>
-                            <span>يومياً من 6ص إلى 6م</span>
+
+                        <!-- Floating Badges -->
+                        <div class="floating-satellite sat-top-left">
+                            <div class="satellite-icon"><i class="fa-solid fa-star"></i></div>
+                            <div class="satellite-text">
+                                <h5>الرغيف رقم #1</h5>
+                                <span>الأعلى تقييماً بالسنبلاوين</span>
+                            </div>
                         </div>
-                        <div class="hero-stat-item">
-                            <div class="hero-stat-icon"><i class="fa-solid fa-truck-fast"></i></div>
-                            <span>توصيل سريع بالسنبلاوين</span>
+
+                        <div class="floating-satellite sat-bottom-right">
+                            <div class="satellite-icon"><i class="fa-solid fa-fire"></i></div>
+                            <div class="satellite-text">
+                                <h5>خبيز ساخن الآن</h5>
+                                <span>جاهز للاستلام والتوصيل</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Features / Why Choose Us -->
-        <section class="features-section" id="features">
+        <!-- 21st.dev Interactive Bento Grid (Features / Why Us) -->
+        <section class="bento-section" id="features">
             <div class="container">
-                <div class="section-header">
+                <div class="section-header" data-reveal="up">
                     <span class="section-badge">لماذا تختارنا؟</span>
-                    <h2 class="section-title">سر تميز مخبز الخير</h2>
+                    <h2 class="section-title">سر التميز في مخبز الخير</h2>
                     <div class="section-divider">
-                        <img src="divider-wheat.png" alt="زخرفة">
+                        <img src="divider-wheat.png" alt="زخرفة القمح">
                     </div>
-                    <p class="section-desc">نحرص على أدق التفاصيل من اختيار حبة القمح وحتى خروج الرغيف الساخن من الفرن</p>
+                    <p class="section-desc">مزيج من عراقة الأفران التراثية وأحدث معايير الجودة والنظافة العالمية</p>
                 </div>
 
-                <div class="features-grid">
-                    <div class="feature-card">
-                        <div class="feature-icon-box">
-                            <i class="fa-solid fa-fire"></i>
+                <div class="bento-grid">
+                    <!-- Bento Card 1 (Large 2-column) -->
+                    <div class="spotlight-card bento-col-2" data-reveal="up">
+                        <div class="bento-icon-header">
+                            <div class="bento-icon-box">
+                                <i class="fa-solid fa-fire-flame-curved"></i>
+                            </div>
+                            <span class="bento-chip">بيت النار الأصيل 🔥</span>
                         </div>
-                        <h3>خبيز طازج على مدار اليوم</h3>
-                        <p>لا نقدم خبزاً مسبق التحضير، أفراننا تعمل طوال اليوم لضمان استلامك للرغيف ساخناً وهشاً في أي وقت.</p>
+                        <h3>خبيز طازج على مدار الساعة</h3>
+                        <p>
+                            أفراننا لا تهدأ، حيث يتم الخبيز على فترات مستمرة طوال اليوم لضمان حصولك على رغيف طازج، هش، وساخن في أي وقت تزورنا فيه أو تطلب التوصيل. رغيفنا يحتفظ بطراوته وجودته حتى اليوم التالي.
+                        </p>
+                        <div class="bento-metric-row">
+                            <span class="bento-metric-num" data-counter="100" data-suffix="%">100%</span>
+                            <span class="bento-metric-label">طازج وساخن يومياً</span>
+                        </div>
                     </div>
 
-                    <div class="feature-card">
-                        <div class="feature-icon-box">
-                            <i class="fa-solid fa-seedling"></i>
+                    <!-- Bento Card 2 -->
+                    <div class="spotlight-card" data-reveal="up">
+                        <div class="bento-icon-header">
+                            <div class="bento-icon-box">
+                                <i class="fa-solid fa-seedling"></i>
+                            </div>
+                            <span class="bento-chip">صحي وطبيعي 🌾</span>
                         </div>
                         <h3>أجود المكونات الطبيعية</h3>
-                        <p>نعتمد على دقيق ممتاز وخميرة طبيعية خالية تماماً من أي محسنات أو إضافات كيميائية ضارة بالصحة.</p>
+                        <p>
+                            نعتمد حصرياً على دقيق بلدي منتقى بعناية وخميرة طبيعية بدون أي محسنات كيميائية أو إضافات صناعية ضارة، لصحة وسلامة عائلتك.
+                        </p>
+                        <div class="bento-metric-row">
+                            <span class="bento-metric-num" data-counter="0" data-suffix="%">0%</span>
+                            <span class="bento-metric-label">محسنات أو مواد كيميائية</span>
+                        </div>
                     </div>
 
-                    <div class="feature-card">
-                        <div class="feature-icon-box">
-                            <i class="fa-solid fa-shield-halved"></i>
+                    <!-- Bento Card 3 -->
+                    <div class="spotlight-card" data-reveal="up">
+                        <div class="bento-icon-header">
+                            <div class="bento-icon-box">
+                                <i class="fa-solid fa-shield-halved"></i>
+                            </div>
+                            <span class="bento-chip">أعلى المعايير 🧼</span>
                         </div>
-                        <h3>نظافة فائقة واهتمام صحي</h3>
-                        <p>نطبق أعلى معايير النظافة والتعقيم المستمر لكافة أدوات العجن والخبز بإشراف دقيق ومستمر.</p>
+                        <h3>نظافة فائقة وتعقيم مستمر</h3>
+                        <p>
+                            نولي اهتماماً فائقاً بنظافة بيئة الخبز وتطهير المعدات وأحواض العجين باستمرار بإشراف مباشر وأيدٍ خبيرة ومدربة.
+                        </p>
+                        <div class="bento-metric-row">
+                            <span class="bento-metric-num" data-counter="5" data-suffix="/5">5/5</span>
+                            <span class="bento-metric-label">معيار النظافة والتعقيم</span>
+                        </div>
                     </div>
 
-                    <div class="feature-card">
-                        <div class="feature-icon-box">
-                            <i class="fa-solid fa-tags"></i>
+                    <!-- Bento Card 4 (2-column) -->
+                    <div class="spotlight-card bento-col-2" data-reveal="up">
+                        <div class="bento-icon-header">
+                            <div class="bento-icon-box">
+                                <i class="fa-solid fa-truck-ramp-box"></i>
+                            </div>
+                            <span class="bento-chip">للمطاعم والمناسبات ⚡</span>
                         </div>
-                        <h3>أسعار تنافسية وعروض للكميات</h3>
-                        <p>أسعار في متناول الجميع مع عروض ممتازة للمناسبات والمطاعم وتجار التجزئة والكميات الكبيرة.</p>
+                        <h3>توصيل سريع وأسعار خاصة للكميات</h3>
+                        <p>
+                            نوفر خط إمداد يومي ساخن لأصحاب المطاعم، محلات الساندوتشات، الحفلات، والمناسبات الكبرى بأسعار الجملة التنافسية والتزام صارم بمواعيد التسليم بالدقيقة.
+                        </p>
+                        <div class="bento-metric-row">
+                            <span class="bento-metric-num" data-counter="50" data-prefix="+">+50</span>
+                            <span class="bento-metric-label">مطعم ومحل يعتمدون علينا يومياً</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Before & After Oven Slider -->
+        <section class="comparison-section" id="comparison">
+            <div class="container">
+                <div class="section-header" data-reveal="up">
+                    <span class="section-badge">مقارنة تفاعلية</span>
+                    <h2 class="section-title">سر الصنعة: من العجين إلى بيت النار</h2>
+                    <div class="section-divider">
+                        <img src="divider-wheat.png" alt="زخرفة القمح">
+                    </div>
+                    <p class="section-desc">اسحب المقبض يميناً ويساراً لمشاهدة تحول كرات العجين بالخميرة البلدية إلى رغيف محمص ساخن</p>
+                </div>
+
+                <div class="comparison-wrapper" id="comparisonWrapper" data-reveal="zoom">
+                    <!-- After Image (Steaming Baked Bread in Oven) -->
+                    <img src="baking-oven.jpg" alt="خبيز بلدي ساخن ومحمص في الفرن" class="comparison-image comparison-after-img">
+                    <span class="comparison-badge badge-after">🔥 بعد: خبيز محمص ساخن</span>
+
+                    <!-- Before Image Container (Raw Dough Prep) -->
+                    <div class="comparison-before-container" id="comparisonBeforeContainer">
+                        <img src="fresh-dough-balls.jpg" alt="عجين بلدي طبيعي بالردة والخميرة" class="comparison-image comparison-before-img">
+                    </div>
+                    <span class="comparison-badge badge-before">🌾 قبل: عجين بلدي طبيعي</span>
+
+                    <!-- Draggable Divider Bar & Handle -->
+                    <div class="comparison-slider-bar" id="comparisonSliderBar">
+                        <div class="comparison-handle" id="comparisonHandle">
+                            <i class="fa-solid fa-left-right"></i>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -164,17 +299,17 @@
         <!-- Products Section -->
         <section class="products-section" id="products">
             <div class="container">
-                <div class="section-header" id="lol">
-                    <span class="section-badge">قائمة المنتجات</span>
+                <div class="section-header" id="lol" data-reveal="up">
+                    <span class="section-badge">قائمة المنتجات والأسعار</span>
                     <h2 class="section-title">أشهى أنواع الخبز والمخبوزات</h2>
                     <div class="section-divider">
-                        <img src="divider-wheat.png" alt="زخرفة">
+                        <img src="divider-wheat.png" alt="زخرفة القمح">
                     </div>
                     <p class="section-desc">اختر ما يناسب ذوقك واحتياج عائلتك، واطلبه مباشرة بضغطة زر</p>
                 </div>
 
                 <!-- Category Filter Buttons -->
-                <div class="filter-tabs">
+                <div class="filter-tabs" data-reveal="up">
                     <button type="button" class="filter-btn active" data-filter="all">جميع المنتجات</button>
                     <button type="button" class="filter-btn" data-filter="baladi">العيش البلدي</button>
                     <button type="button" class="filter-btn" data-filter="healthy">صحي ودايت</button>
@@ -184,13 +319,16 @@
                 <!-- Products Grid -->
                 <div class="products-grid">
                     <!-- Product 1: عيش بلدي -->
-                    <div class="product-card" data-category="baladi">
+                    <div class="product-card" data-category="baladi" data-reveal="up">
                         <div class="product-image-wrap">
-                            <img src="9f6d5da7-6466-4813-9289-5b43af554422.jpg" alt="عيش بلدي فاخر">
+                            <img src="9f6d5da7-6466-4813-9289-5b43af554422.jpg" alt="عيش بلدي مصري فاخر">
                             <div class="product-badge">
                                 <i class="fa-solid fa-star"></i>
                                 <span>الأكثر طلباً</span>
                             </div>
+                            <button type="button" class="product-image-lens" onclick="openLightboxFromSrc('9f6d5da7-6466-4813-9289-5b43af554422.jpg', 'عيش بلدي مصري فاخر', 'مخبوز بالردة الناعمة ودقيق بلدي فاخر، كامل الرقة وطري ومثالي لجميع الوجبات')" title="معاينة وتكبير الصورة" aria-label="معاينة الصورة">
+                                <i class="fa-solid fa-magnifying-glass-plus"></i>
+                            </button>
                         </div>
                         <div class="product-info">
                             <h3 class="product-title">عيش بلدي مصري فاخر</h3>
@@ -217,13 +355,16 @@
                     </div>
 
                     <!-- Product 2: عيش أسمر -->
-                    <div class="product-card" data-category="healthy">
+                    <div class="product-card" data-category="healthy" data-reveal="up">
                         <div class="product-image-wrap">
                             <img src="322f6495-8a37-4d49-adb7-1565832109fb.jpg" alt="عيش أسمر صحي بالردة">
                             <div class="product-badge">
                                 <i class="fa-solid fa-heart-pulse"></i>
                                 <span>صحي 100%</span>
                             </div>
+                            <button type="button" class="product-image-lens" onclick="openLightboxFromSrc('322f6495-8a37-4d49-adb7-1565832109fb.jpg', 'عيش أسمر بالردة (دايت)', 'غني بالألياف الطبيعية ومفيد لمرضى السكر ومتبعي الحمية الغذائية')" title="معاينة وتكبير الصورة" aria-label="معاينة الصورة">
+                                <i class="fa-solid fa-magnifying-glass-plus"></i>
+                            </button>
                         </div>
                         <div class="product-info">
                             <h3 class="product-title">عيش أسمر بالردة (دايت)</h3>
@@ -250,13 +391,16 @@
                     </div>
 
                     <!-- Product 3: عيش شامي -->
-                    <div class="product-card" data-category="bakery">
+                    <div class="product-card" data-category="bakery" data-reveal="up">
                         <div class="product-image-wrap">
                             <img src="a4484cca-0df0-4397-a0d8-73a50113c60b.jpg" alt="عيش شامي أبيض">
                             <div class="product-badge">
                                 <i class="fa-solid fa-sun"></i>
                                 <span>طري وهش</span>
                             </div>
+                            <button type="button" class="product-image-lens" onclick="openLightboxFromSrc('a4484cca-0df0-4397-a0d8-73a50113c60b.jpg', 'عيش شامي أبيض فاخر', 'خبز أبيض خفيف وهش مناسب للساندوتشات، المشويات، والوجبات السريعة')" title="معاينة وتكبير الصورة" aria-label="معاينة الصورة">
+                                <i class="fa-solid fa-magnifying-glass-plus"></i>
+                            </button>
                         </div>
                         <div class="product-info">
                             <h3 class="product-title">عيش شامي أبيض فاخر</h3>
@@ -283,13 +427,16 @@
                     </div>
 
                     <!-- Product 4: مخبوزات وفينو -->
-                    <div class="product-card" data-category="bakery">
+                    <div class="product-card" data-category="bakery" data-reveal="up">
                         <div class="product-image-wrap">
                             <img src="images.jpg" alt="فينو ومخبوزات طازجة">
                             <div class="product-badge">
                                 <i class="fa-solid fa-sparkles"></i>
                                 <span>للمدارس والرحلات</span>
                             </div>
+                            <button type="button" class="product-image-lens" onclick="openLightboxFromSrc('images.jpg', 'فينو ومخبوزات طازجة', 'عيش فينو قطني طازج مع السمسم، ممتاز لتحضير لانش بوكس المدارس')" title="معاينة وتكبير الصورة" aria-label="معاينة الصورة">
+                                <i class="fa-solid fa-magnifying-glass-plus"></i>
+                            </button>
                         </div>
                         <div class="product-info">
                             <h3 class="product-title">فينو ومخبوزات طازجة</h3>
@@ -316,13 +463,16 @@
                     </div>
 
                     <!-- Product 5: عيش بلدي مرحرح -->
-                    <div class="product-card" data-category="baladi">
+                    <div class="product-card" data-category="baladi" data-reveal="up">
                         <div class="product-image-wrap">
                             <img src="1b862cbe-ee58-4430-9697-13c963065683.jpg" alt="عيش بلدي خفيف مرحرح">
                             <div class="product-badge">
                                 <i class="fa-solid fa-wheat-awn"></i>
                                 <span>خفيف ولذيذ</span>
                             </div>
+                            <button type="button" class="product-image-lens" onclick="openLightboxFromSrc('1b862cbe-ee58-4430-9697-13c963065683.jpg', 'عيش بلدي خفيف (مرحرح)', 'رغيف رقيق ومحمص على النار الهادئة، مناسب للفول والطعمية والأكلات الشعبية')" title="معاينة وتكبير الصورة" aria-label="معاينة الصورة">
+                                <i class="fa-solid fa-magnifying-glass-plus"></i>
+                            </button>
                         </div>
                         <div class="product-info">
                             <h3 class="product-title">عيش بلدي خفيف (مرحرح)</h3>
@@ -351,12 +501,348 @@
             </div>
         </section>
 
+        <!-- Interactive Photo Gallery Section -->
+        <section class="gallery-section" id="gallery">
+            <div class="container">
+                <div class="section-header" data-reveal="up">
+                    <span class="section-badge">معرض الصور التفاعلي</span>
+                    <h2 class="section-title">من قلب بيت النار وكواليس الخبيز</h2>
+                    <div class="section-divider">
+                        <img src="divider-wheat.png" alt="زخرفة القمح">
+                    </div>
+                    <p class="section-desc">جولة بصرية في تفاصيل عملنا اليومي، من خلط الدقيق حتى خروج الرغيف الساخن</p>
+                </div>
+
+                <!-- Gallery Category Tabs -->
+                <div class="gallery-filter-tabs" data-reveal="up">
+                    <button type="button" class="gallery-filter-btn active" data-gallery-filter="all">جميع الصور</button>
+                    <button type="button" class="gallery-filter-btn" data-gallery-filter="oven">خبيز بيت النار</button>
+                    <button type="button" class="gallery-filter-btn" data-gallery-filter="prep">كواليس التحضير</button>
+                    <button type="button" class="gallery-filter-btn" data-gallery-filter="bread">الخبز البلدي</button>
+                    <button type="button" class="gallery-filter-btn" data-gallery-filter="bakery">المخبوزات</button>
+                </div>
+
+                <!-- Gallery Masonry / Bento Grid -->
+                <div class="gallery-grid" id="galleryGrid">
+                    <!-- Gallery Item 1 (Wide Featured) -->
+                    <div class="gallery-card featured-wide" data-gallery-cat="oven" data-index="0" data-reveal="up" onclick="openLightboxByIndex(0)">
+                        <img src="baking-oven.jpg" alt="خبيز ساخن في بيت النار" class="gallery-card-img">
+                        <div class="gallery-card-overlay">
+                            <div class="gallery-top-row">
+                                <span class="gallery-tag">🔥 خبيز بيت النار</span>
+                                <div class="gallery-zoom-icon"><i class="fa-solid fa-expand"></i></div>
+                            </div>
+                            <div class="gallery-bottom-info">
+                                <h4>خبيز بلدي ساخن على المطرحة الخشبية</h4>
+                                <p>خبيز مستمر على مدار اليوم من الفجر حتى المساء بنار الحطب والغاز الطبيعي</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 2 -->
+                    <div class="gallery-card" data-gallery-cat="prep" data-index="1" data-reveal="up" onclick="openLightboxByIndex(1)">
+                        <img src="dough-prep.jpg" alt="عجن يدوي وخميرة طبيعية" class="gallery-card-img">
+                        <div class="gallery-card-overlay">
+                            <div class="gallery-top-row">
+                                <span class="gallery-tag">🌾 كواليس العجين</span>
+                                <div class="gallery-zoom-icon"><i class="fa-solid fa-expand"></i></div>
+                            </div>
+                            <div class="gallery-bottom-info">
+                                <h4>عجن يدوي وإتقان الصنعة</h4>
+                                <p>دقيق بلدي منقى وخميرة طبيعية بدون أي محسنات صناعية</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 3 -->
+                    <div class="gallery-card" data-gallery-cat="bread" data-index="2" data-reveal="up" onclick="openLightboxByIndex(2)">
+                        <img src="9f6d5da7-6466-4813-9289-5b43af554422.jpg" alt="عيش بلدي مصري فاخر" class="gallery-card-img">
+                        <div class="gallery-card-overlay">
+                            <div class="gallery-top-row">
+                                <span class="gallery-tag">🍞 عيش بلدي</span>
+                                <div class="gallery-zoom-icon"><i class="fa-solid fa-expand"></i></div>
+                            </div>
+                            <div class="gallery-bottom-info">
+                                <h4>عيش بلدي مصري بالردة الناعمة</h4>
+                                <p>الرغيف المصري الأصيل كما يجب أن يكون، طري ومحمص</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 4 -->
+                    <div class="gallery-card" data-gallery-cat="bakery" data-index="3" data-reveal="up" onclick="openLightboxByIndex(3)">
+                        <img src="bakery-showcase.jpg" alt="تشكيلة مخبوزات وفينو" class="gallery-card-img">
+                        <div class="gallery-card-overlay">
+                            <div class="gallery-top-row">
+                                <span class="gallery-tag">✨ تشكيلة مخبوزات</span>
+                                <div class="gallery-zoom-icon"><i class="fa-solid fa-expand"></i></div>
+                            </div>
+                            <div class="gallery-bottom-info">
+                                <h4>فينو ومخبوزات متنوعة بالسمسم</h4>
+                                <p>أشهى ساندوتشات الفينو والخبز الفرنسي والحلويات الخفيفة</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 5 -->
+                    <div class="gallery-card" data-gallery-cat="bread" data-index="4" data-reveal="up" onclick="openLightboxByIndex(4)">
+                        <img src="322f6495-8a37-4d49-adb7-1565832109fb.jpg" alt="عيش أسمر بالردة" class="gallery-card-img">
+                        <div class="gallery-card-overlay">
+                            <div class="gallery-top-row">
+                                <span class="gallery-tag">💚 صحي ودايت</span>
+                                <div class="gallery-zoom-icon"><i class="fa-solid fa-expand"></i></div>
+                            </div>
+                            <div class="gallery-bottom-info">
+                                <h4>عيش أسمر بالردة الكاملة</h4>
+                                <p>خيار مثالي لمرضى السكري والدايت وغني بالألياف الطبيعية</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 6 -->
+                    <div class="gallery-card" data-gallery-cat="bread" data-index="5" data-reveal="up" onclick="openLightboxByIndex(5)">
+                        <img src="a4484cca-0df0-4397-a0d8-73a50113c60b.jpg" alt="عيش شامي أبيض" class="gallery-card-img">
+                        <div class="gallery-card-overlay">
+                            <div class="gallery-top-row">
+                                <span class="gallery-tag">🌟 عيش شامي</span>
+                                <div class="gallery-zoom-icon"><i class="fa-solid fa-expand"></i></div>
+                            </div>
+                            <div class="gallery-bottom-info">
+                                <h4>عيش شامي أبيض هش وطري</h4>
+                                <p>الخيار المفضل للمطاعم ولأشهى سندوتشات الشاورما والمشويات</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 21st.dev Infinite Testimonial Marquee (Social Proof) -->
+        <section class="marquee-section" id="reviews">
+            <div class="container">
+                <div class="section-header" data-reveal="up">
+                    <span class="section-badge">شهادات نعتز بها</span>
+                    <h2 class="section-title">ماذا يقول عملاؤنا الكرام؟</h2>
+                    <div class="section-divider">
+                        <img src="divider-wheat.png" alt="زخرفة القمح">
+                    </div>
+                    <p class="section-desc">ثقة أهل السنبلاوين هي أكبر دافع لنا للاستمرار والتطوير المستمر</p>
+                </div>
+            </div>
+
+            <!-- 21st.dev Marquee Track 1 (Left to Right) -->
+            <div class="marquee-container" data-reveal="up">
+                <div class="marquee-track">
+                    <!-- Review Card 1 -->
+                    <div class="marquee-card">
+                        <div class="marquee-card-header">
+                            <div class="marquee-stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <span class="marquee-badge">زبون موثق ✔️</span>
+                        </div>
+                        <p class="marquee-quote">"ما شاء الله تبارك الله، أنظف وأطعم عيش بلدي في السنبلاوين كلها. الرغيف بيقعد لتاني يوم طري ومورق زي ما هو."</p>
+                        <div class="marquee-author">
+                            <div class="marquee-avatar">أ</div>
+                            <div class="marquee-author-info">
+                                <h4>أحمد السيد</h4>
+                                <span>زبون دائم - السنبلاوين</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Review Card 2 -->
+                    <div class="marquee-card">
+                        <div class="marquee-card-header">
+                            <div class="marquee-stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <span class="marquee-badge">زبون موثق ✔️</span>
+                        </div>
+                        <p class="marquee-quote">"العيش الأسمر بالردة ممتاز جداً، فرق معايا كتير في الدايت، مش ناشف وطعمه حلو وخفيف على المعدة. بالتوفيق دائماً."</p>
+                        <div class="marquee-author">
+                            <div class="marquee-avatar">م</div>
+                            <div class="marquee-author-info">
+                                <h4>محمود الشربيني</h4>
+                                <span>مهتم بالصحة والدايت</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Review Card 3 -->
+                    <div class="marquee-card">
+                        <div class="marquee-card-header">
+                            <div class="marquee-stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <span class="marquee-badge">شريك تجاري 🤝</span>
+                        </div>
+                        <p class="marquee-quote">"طلبت منهم كمية كبيرة لعزومة وكانت واصلة في معادها بالدقيقة وسخنة وكله انبسط من الطعم والجودة. معاملة راقية جداً."</p>
+                        <div class="marquee-author">
+                            <div class="marquee-avatar">ع</div>
+                            <div class="marquee-author-info">
+                                <h4>علي رضا</h4>
+                                <span>صاحب مطعم مشويات</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Review Card 4 -->
+                    <div class="marquee-card">
+                        <div class="marquee-card-header">
+                            <div class="marquee-stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <span class="marquee-badge">زبون موثق ✔️</span>
+                        </div>
+                        <p class="marquee-quote">"الفينو بتاعهم قطني وهش جداً، أولادي بيحبوه في ساندوتشات المدرسة. النظافة عندهم رقم واحد بجد."</p>
+                        <div class="marquee-author">
+                            <div class="marquee-avatar">س</div>
+                            <div class="marquee-author-info">
+                                <h4>سارة إبراهيم</h4>
+                                <span>أم لطفلين</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Duplicate for infinite seamless loop -->
+                    <div class="marquee-card">
+                        <div class="marquee-card-header">
+                            <div class="marquee-stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <span class="marquee-badge">زبون موثق ✔️</span>
+                        </div>
+                        <p class="marquee-quote">"ما شاء الله تبارك الله، أنظف وأطعم عيش بلدي في السنبلاوين كلها. الرغيف بيقعد لتاني يوم طري ومورق زي ما هو."</p>
+                        <div class="marquee-author">
+                            <div class="marquee-avatar">أ</div>
+                            <div class="marquee-author-info">
+                                <h4>أحمد السيد</h4>
+                                <span>زبون دائم - السنبلاوين</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 21st.dev Marquee Track 2 (Reverse Direction) -->
+                <div class="marquee-track reverse">
+                    <!-- Review Card 5 -->
+                    <div class="marquee-card">
+                        <div class="marquee-card-header">
+                            <div class="marquee-stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <span class="marquee-badge">زبون موثق ✔️</span>
+                        </div>
+                        <p class="marquee-quote">"العيش الشامي خفيف زي الريشة، بنستخدمه في الشاورما والفاهيتا في البيت وبيبقى خرافة. تسلم إيديكم."</p>
+                        <div class="marquee-author">
+                            <div class="marquee-avatar">ط</div>
+                            <div class="marquee-author-info">
+                                <h4>طارق عبد الغني</h4>
+                                <span>السنبلاوين</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Review Card 6 -->
+                    <div class="marquee-card">
+                        <div class="marquee-card-header">
+                            <div class="marquee-stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <span class="marquee-badge">زبون موثق ✔️</span>
+                        </div>
+                        <p class="marquee-quote">"سرعة استجابة على الواتساب وطلبنا وصل سخن في أقل من 20 دقيقة. شكراً لاهتمامكم بالعميل."</p>
+                        <div class="marquee-author">
+                            <div class="marquee-avatar">ي</div>
+                            <div class="marquee-author-info">
+                                <h4>يوسف خالد</h4>
+                                <span>طلب توصيل منزلي</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Review Card 7 -->
+                    <div class="marquee-card">
+                        <div class="marquee-card-header">
+                            <div class="marquee-stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <span class="marquee-badge">زبون موثق ✔️</span>
+                        </div>
+                        <p class="marquee-quote">"الخميرة البلدية والطعم الأصلي باين في كل لقمة. ريحة الخبيز بتفكرنا بأيام زمان الحلوة."</p>
+                        <div class="marquee-author">
+                            <div class="marquee-avatar">ح</div>
+                            <div class="marquee-author-info">
+                                <h4>حاج حسن</h4>
+                                <span>من أهالي السنبلاوين</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Duplicate for infinite seamless loop -->
+                    <div class="marquee-card">
+                        <div class="marquee-card-header">
+                            <div class="marquee-stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <span class="marquee-badge">زبون موثق ✔️</span>
+                        </div>
+                        <p class="marquee-quote">"العيش الشامي خفيف زي الريشة، بنستخدمه في الشاورما والفاهيتا في البيت وبيبقى خرافة. تسلم إيديكم."</p>
+                        <div class="marquee-author">
+                            <div class="marquee-avatar">ط</div>
+                            <div class="marquee-author-info">
+                                <h4>طارق عبد الغني</h4>
+                                <span>السنبلاوين</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- About Us Section -->
         <section class="about-section" id="about">
             <div class="container">
                 <div class="about-grid">
-                    <div class="about-image-column">
-                        <div class="about-image-card">
+                    <div class="about-image-column" data-reveal="right">
+                        <div class="about-image-card" onclick="openLightboxFromSrc('about-us-background(1).png', 'حكايتنا مع الرغيف البلدي', 'مخبز الخير بالسنبلاوين - مسيرة أكثر من 10 سنوات من الجودة والأمانة')">
                             <img src="about-us-background(1).png" alt="مخبز الخير أصالة وجودة">
                         </div>
                         <div class="about-badge-float">
@@ -368,12 +854,12 @@
                         </div>
                     </div>
 
-                    <div class="about-content-column">
+                    <div class="about-content-column" data-reveal="left">
                         <div class="section-header" style="text-align: right; margin-bottom: 1.5rem;">
                             <span class="section-badge">من نحن</span>
                             <h2 class="section-title">حكايتنا مع الرغيف.. إخلاص وجودة</h2>
-                            <div class="section-divider" style="margin: 0.5rem 0 1rem;">
-                                <img src="divider-wheat.png" alt="زخرفة">
+                            <div class="section-divider" style="margin: 0.5rem 0 1.2rem;">
+                                <img src="divider-wheat.png" alt="زخرفة القمح">
                             </div>
                         </div>
 
@@ -408,7 +894,7 @@
                         </div>
 
                         <div>
-                            <button type="button" class="btn-primary" onclick="openOrderModal('عيش بلدي طازج', 5, '20 رغيف')">
+                            <button type="button" class="btn-primary-shimmer" onclick="openOrderModal('عيش بلدي مصري فاخر', 5, '20 رغيف')">
                                 <i class="fa-solid fa-hand-holding-heart"></i>
                                 <span>تواصل واطلب الآن</span>
                             </button>
@@ -419,7 +905,7 @@
         </section>
 
         <!-- CTA Order Banner -->
-        <section class="cta-banner-section">
+        <section class="cta-banner-section" data-reveal="zoom">
             <div class="container">
                 <div class="cta-banner-card">
                     <div class="cta-content">
@@ -439,82 +925,12 @@
                 </div>
             </div>
         </section>
-
-        <!-- Testimonials / Reviews -->
-        <section class="testimonials-section" id="reviews">
-            <div class="container">
-                <div class="section-header">
-                    <span class="section-badge">شهادات نعتز بها</span>
-                    <h2 class="section-title">ماذا يقول عملاؤنا عنا؟</h2>
-                    <div class="section-divider">
-                        <img src="divider-wheat.png" alt="زخرفة">
-                    </div>
-                    <p class="section-desc">ثقة أهل السنبلاوين هي أكبر دافع لنا للاستمرار والتطوير المستمر</p>
-                </div>
-
-                <div class="testimonials-grid">
-                    <div class="testimonial-card">
-                        <div class="stars">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </div>
-                        <p class="testimonial-quote">"ما شاء الله تبارك الله، أنظف وأطعم عيش بلدي في السنبلاوين كلها. الرغيف بيقعد لتاني يوم طري ومورق زي ما هو."</p>
-                        <div class="testimonial-author">
-                            <div class="author-avatar">أ</div>
-                            <div class="author-info">
-                                <h4>أحمد السيد</h4>
-                                <span>زبون دائم</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="testimonial-card">
-                        <div class="stars">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </div>
-                        <p class="testimonial-quote">"العيش الأسمر بالردة ممتاز جداً، فرق معايا كتير في الدايت، مش ناشف وطعمه حلو وخفيف على المعدة. بالتوفيق دائماً."</p>
-                        <div class="testimonial-author">
-                            <div class="author-avatar">م</div>
-                            <div class="author-info">
-                                <h4>محمود الشربيني</h4>
-                                <span>السنبلاوين</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="testimonial-card">
-                        <div class="stars">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </div>
-                        <p class="testimonial-quote">"طلبت منهم كمية كبيرة لعزومة وكانت واصلة في معادها بالدقيقة وسخنة وكله انبسط من الطعم والجودة. معاملة راقية جداً."</p>
-                        <div class="testimonial-author">
-                            <div class="author-avatar">ع</div>
-                            <div class="author-info">
-                                <h4>علي رضا</h4>
-                                <span>صاحب مطعم</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
     </main>
 
     <!-- Footer -->
     <footer id="footer-yes">
         <div class="container">
-            <div class="footer-grid" id="footer">
+            <div class="footer-grid" id="footer" data-reveal="up">
                 <!-- Column 1: Brand Info -->
                 <div class="footer-brand">
                     <a href="#hero" class="brand">
@@ -523,7 +939,7 @@
                         </div>
                         <div class="brand-text">
                             <span class="brand-title">مخبز الخير</span>
-                            <span class="brand-subtitle" style="color: rgba(255,255,255,0.7);">السنبلاوين - الدقهلية</span>
+                            <span class="brand-subtitle" style="color: rgba(255,255,255,0.72);">السنبلاوين - الدقهلية</span>
                         </div>
                     </a>
                     <p class="footer-desc">
@@ -542,9 +958,10 @@
                     <h3>روابط سريعة</h3>
                     <ul class="footer-links">
                         <li><a href="#hero" class="footer-link"><i class="fa-solid fa-chevron-left"></i> الرئيسية</a></li>
-                        <li><a href="#about" class="footer-link"><i class="fa-solid fa-chevron-left"></i> من نحن</a></li>
-                        <li><a href="#products" class="footer-link"><i class="fa-solid fa-chevron-left"></i> قائمة المنتجات والأسعار</a></li>
                         <li><a href="#features" class="footer-link"><i class="fa-solid fa-chevron-left"></i> مميزاتنا</a></li>
+                        <li><a href="#products" class="footer-link"><i class="fa-solid fa-chevron-left"></i> قائمة الأسعار</a></li>
+                        <li><a href="#gallery" class="footer-link"><i class="fa-solid fa-chevron-left"></i> معرض الصور</a></li>
+                        <li><a href="#about" class="footer-link"><i class="fa-solid fa-chevron-left"></i> من نحن</a></li>
                         <li><a href="#reviews" class="footer-link"><i class="fa-solid fa-chevron-left"></i> آراء العملاء</a></li>
                     </ul>
                 </div>
@@ -674,15 +1091,48 @@
         </div>
     </div>
 
+    <!-- 21st.dev Interactive Lightbox Modal -->
+    <div class="lightbox-modal" id="lightboxModal" onclick="handleLightboxBackdropClick(event)">
+        <div class="lightbox-content-wrap">
+            <button type="button" class="lightbox-close-btn" onclick="closeLightbox()" title="إغلاق المعاينة" aria-label="إغلاق">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <button type="button" class="lightbox-nav-btn prev" onclick="navigateLightbox(-1)" title="الصورة السابقة" aria-label="السابق">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+            <button type="button" class="lightbox-nav-btn next" onclick="navigateLightbox(1)" title="الصورة التالية" aria-label="التالي">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <div class="lightbox-img-frame">
+                <img src="" id="lightboxImg" alt="معاينة الصورة">
+            </div>
+            <div class="lightbox-info-bar">
+                <div class="lightbox-details">
+                    <h4 id="lightboxTitle">عنوان الصورة</h4>
+                    <p id="lightboxDesc">وصف الصورة</p>
+                </div>
+                <div class="lightbox-actions">
+                    <button type="button" class="lightbox-order-btn" id="lightboxOrderBtn" onclick="orderFromLightbox()">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <span>طلب الصنف</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Floating Action Buttons -->
     <div class="floating-actions">
-        <a href="https://wa.me/201013984024" target="_blank" class="btn-floating-wa" title="تواصل عبر واتساب" aria-label="تواصل عبر واتساب">
+        <a href="https://wa.me/201013984024" target="_blank" class="btn-floating-wa" id="btnFloatingWa" title="تواصل عبر واتساب" aria-label="تواصل عبر واتساب">
             <i class="fa-brands fa-whatsapp"></i>
         </a>
         <button type="button" class="btn-back-to-top" id="btnBackToTop" onclick="scrollToTop()" title="العودة لأعلى الصفحة" aria-label="العودة لأعلى">
             <i class="fa-solid fa-arrow-up"></i>
         </button>
     </div>
+
+    <!-- 21st.dev Toast Container -->
+    <div class="toast-container" id="toastContainer"></div>
 
     <!-- Main JavaScript -->
     <script src="max.js"></script>
